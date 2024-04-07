@@ -1,0 +1,15 @@
+  version: '3.8'
+
+  services:
+    postgres:
+      container_name: nest-projeto-a3
+      image: postgres
+      ports:
+        - 5432:5432
+      environment:
+        POSTGRES_USER:  postgres
+        POSTGRES_PASSWORD: docker
+        POSTGRES_DB: projeto-a3
+        PGDATA: /data/postgres
+      volumes:
+        -  ./data/pg:/data/postgres
