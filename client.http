@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
 	"name": "John Doe",
-	"email": "johndoe1@example.com",
+	"email": "johndoe@example.com",
 	"password": "123456",
 	"cpf": "07634444138",
 	"phone": "71912345678",
@@ -27,15 +27,11 @@ Content-Type: application/json
 
 ###
 
-# @name create_question
-POST {{baseUrl}}/questions
+# @name create_resquests
+POST {{baseUrl}}/resquests
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
-{
-    "title": "Nova pergunta 3",
-    "content": "Conteudo da pergunta 3"
-}
 
 ###
 
