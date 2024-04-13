@@ -2,12 +2,12 @@
 @authToken = {{authenticate.response.body.access_token}}
 
 # @name create_user
-POST {{baseUrl}}/user
+POST {{baseUrl}}/users
 Content-Type: application/json
 
 {
 	"name": "John Doe",
-	"email": "johndoe@example.com",
+	"email": "johndoe2@example.com",
 	"password": "123456",
 	"cpf": "07634444138",
 	"phone": "71912345678",
@@ -27,14 +27,14 @@ Content-Type: application/json
 
 ###
 
-# @name create_resquests
-POST {{baseUrl}}/resquests
+# @name create_request
+POST {{baseUrl}}/request
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-    "title": "Nova pergunta 2",
-    "content": "Conteudo da pergunta 2",
+    "title": "Nova pergunta 11",
+    "content": "Conteudo da pergunta 11",
     "requestType": "Any",
     "requestPriority": "Any"
 }
@@ -42,7 +42,13 @@ Authorization: Bearer {{authToken}}
 
 ###
 
-# @name fetch_recent_questions
-GET {{baseUrl}}/resquests?page=1
+# @name fetch_request
+GET {{baseUrl}}/user/requests?page=1
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
+
+###
+
+# @name fetch_recent_requestrequest
+GET {{baseUrl}}/requests?page=1
+Content-Type: application/json
