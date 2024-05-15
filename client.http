@@ -7,9 +7,9 @@ Content-Type: application/json
 
 {
 	"name": "John Doe",
-	"email": "johndoe2@example.com",
+	"email": "johndoe3@example.com",
 	"password": "123456",
-	"cpf": "07634444138",
+	"cpf": "07634444136",
 	"phone": "71912345678",
 	"DistrictCouncil": "Prefeitura-Bairro Cidade Baixa"
 }
@@ -21,7 +21,7 @@ POST {{baseUrl}}/sessions
 Content-Type: application/json
 
 {
-    "email": "johndoe@example.com",
+    "email": "johndoe3@example.com",
     "password": "123456"
 }
 
